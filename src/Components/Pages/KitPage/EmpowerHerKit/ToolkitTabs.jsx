@@ -10,8 +10,13 @@ function ToolkitTabs() {
   return (
     <TabsWrapper>
       <TabList>
-        <Tab>Salary</Tab>
         <SubTabList>
+        <SubTab
+            active={activeTab === "Salary"}
+            onClick={() => setActiveTab("Salary")}
+          >
+            Salary
+          </SubTab>
           <SubTab
             active={activeTab === "Negotiation 101"}
             onClick={() => setActiveTab("Negotiation 101")}
