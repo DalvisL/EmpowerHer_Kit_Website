@@ -69,7 +69,7 @@ const ContentWrapper = styled.section`
 `;
 
 const ContentColumns = styled.div`
-  gap: 50px;
+  gap: 100px;
   display: flex;
   @media (max-width: 991px) {
     flex-direction: column;
