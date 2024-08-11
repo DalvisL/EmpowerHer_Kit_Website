@@ -3,17 +3,15 @@
  */
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function CallToAction() {
-  const handleClick = () => {
-    console.log("CTA button clicked");
-  };
 
   return (
     <CTAWrapper>
-      <CTAButton onClick={handleClick} tabIndex="0" role="button">
-        TRY ME OUT
-      </CTAButton>
+      <StyledLink to="/toolkit">
+        <CTAButton tabIndex="0" role="button">TRY ME OUT</CTAButton>
+      </StyledLink>
     </CTAWrapper>
   );
 }
@@ -48,5 +46,9 @@ const CTAButton = styled.div`
     padding: 15px;
   }
 `;
+
+const StyledLink = styled(Link)`
+text-decoration: none;
+`
 
 export default CallToAction;
