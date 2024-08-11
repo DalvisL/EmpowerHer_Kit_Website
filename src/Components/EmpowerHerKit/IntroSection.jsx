@@ -35,89 +35,59 @@ function IntroSection() {
 
 const Section = styled.section`
   display: flex;
-  margin-top: 80px;
   width: 100%;
-  flex-direction: column;
-  padding: 0 62px;
-  @media (max-width: 991px) {
-    margin-top: 40px;
-    padding: 0 20px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 `;
 
 const ContentWrapper = styled.div`
-  gap: 20px;
   display: flex;
+  gap: 40px;
+  align-items: center;
   @media (max-width: 991px) {
     flex-direction: column;
     align-items: stretch;
-    gap: 0px;
+    gap: 20px;
   }
 `;
 
 const ImageColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 50%;
-  margin-left: 0px;
-  @media (max-width: 991px) {
-    width: 100%;
-  }
+  flex: 1;
 `;
 
 const Img = styled.img`
-  aspect-ratio: 1.34;
-  object-fit: contain;
-  object-position: center;
   width: 100%;
-  flex-grow: 1;
-  @media (max-width: 991px) {
-    max-width: 100%;
-    margin-top: 40px;
-  }
+  height: auto;
+  object-fit: contain;
 `;
 
 const TextColumn = styled.div`
-  display: flex;
-  flex-direction: column;
-  line-height: normal;
-  width: 50%;
-  margin-left: 20px;
-  @media (max-width: 991px) {
-    width: 100%;
-  }
+  flex: 1;
 `;
 
 const TextContent = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-self: stretch;
   font-family: Josefin Sans, sans-serif;
   color: #06423d;
-  margin: auto 0;
-  @media (max-width: 991px) {
-    margin-top: 40px;
-  }
 `;
 
 const IntroTitle = styled.h2`
   font-size: 36px;
   font-weight: 700;
   text-align: center;
-  align-self: center;
-  margin-left: 23px;
+  margin-bottom: 20px;
   @media (max-width: 991px) {
-    max-width: 100%;
+    font-size: 28px;
   }
 `;
 
 const IntroParagraph = styled.p`
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 500;
-  margin-top: 45px;
+  line-height: 1.6;
   @media (max-width: 991px) {
-    margin-top: 40px;
+    font-size: 16px;
   }
 `;
 

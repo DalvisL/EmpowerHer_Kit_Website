@@ -13,7 +13,6 @@ function CallToAction() {
     <CTAWrapper>
       <CTAButton onClick={handleClick} tabIndex="0" role="button">
         TRY ME OUT
-        <br />
       </CTAButton>
     </CTAWrapper>
   );
@@ -23,10 +22,7 @@ const CTAWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 84px;
-  @media (max-width: 991px) {
-    margin-top: 40px;
-  }
+  margin-top: 60px;
 `;
 
 const CTAButton = styled.div`
@@ -36,7 +32,7 @@ const CTAButton = styled.div`
   max-width: 100%;
   color: #ffffff;
   text-align: center;
-  padding: 34px 70px;
+  padding: 20px;
   font: 400 24px Josefin Sans, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -48,7 +44,8 @@ const CTAButton = styled.div`
     box-shadow: 0 0 0 3px rgba(146, 223, 190, 0.5);
   }
   @media (max-width: 991px) {
-    padding: 20px;
+    font-size: 20px;
+    padding: 15px;
   }
 `;
 

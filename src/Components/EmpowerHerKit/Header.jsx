@@ -12,6 +12,7 @@ const Title = styled.h1`
   color: #06423d;
   font: 400 80px Josefin Sans, sans-serif;
   text-align: center;
+  margin: 0 0 20px;
   @media (max-width: 991px) {
     font-size: 40px;
   }

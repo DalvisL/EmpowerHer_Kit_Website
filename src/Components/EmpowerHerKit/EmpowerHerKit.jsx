@@ -26,8 +26,10 @@ const HomeFrame = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
-  padding: 51px 0 96px;
+  min-height: 100vh;
+  padding: 51px 20px 96px;
+  box-sizing: border-box;
+  margin: 0;
 `;
 
 export default EmpowerHerKit;

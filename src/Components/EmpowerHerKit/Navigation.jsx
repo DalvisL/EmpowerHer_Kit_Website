@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 function Navigation() {
   const navItems = ["Home", "Toolkit", "About Us"];
+
   return (
     <NavContainer>
       <NavBar />
@@ -22,7 +23,7 @@ const NavContainer = styled.nav`
   position: relative;
   width: 100%;
   max-width: 1826px;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 `;
 
 const NavBar = styled.div`
@@ -34,9 +35,8 @@ const NavBar = styled.div`
 
 const NavList = styled.ul`
   position: absolute;
-  top: 50%;
-  right: 81px;
-  transform: translateY(-50%);
+  top: calc(100% + 10px);
+  right: 0;
   display: flex;
   gap: 20px;
   color: #06423d;
