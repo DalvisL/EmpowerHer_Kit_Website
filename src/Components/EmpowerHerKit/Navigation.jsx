@@ -3,6 +3,7 @@
  */
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Navigation() {
   const navItems = ["Home", "Toolkit", "About Us"];
@@ -12,7 +13,11 @@ function Navigation() {
       <NavBar />
       <NavList>
         {navItems.map((item, index) => (
-          <NavItem key={index}>{item}</NavItem>
+          <NavItem key={index}>
+            <StyledLink to={`/${item.toLowerCase().replace(" ", "-")}`}>
+              {item}
+            </StyledLink>
+          </NavItem>
         ))}
       </NavList>
     </NavContainer>
@@ -55,6 +60,10 @@ const NavItem = styled.li`
   @media (max-width: 991px) {
     white-space: initial;
   }
+`;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
 `;
 
 export default Navigation;
