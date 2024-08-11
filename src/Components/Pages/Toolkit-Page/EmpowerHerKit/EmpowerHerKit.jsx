@@ -4,6 +4,7 @@ import ToolboxInstructions from "./ToolboxInstructions";
 import ToolboxIcon from "./ToolboxIcon";
 import Header from "../../../EmpowerHerKit/Header";
 import Navigation from "../../../EmpowerHerKit/Navigation";
+import { Link } from "react-router-dom";
 
 function EmpowerHerKit() {
   const [active, setActive] = useState(false);
@@ -58,7 +59,7 @@ const bubbleAnimationOut = keyframes`
 const Bubbles = ({ visible }) => {
   return (
     <BubbleContainer>
-      <BubbleLink href="#link1" $delay="0s" visible={visible}>
+      <BubbleLink to={'/kitpage'} $delay="0s" visible={visible}>
         <PlaceholderSVG />
       </BubbleLink>
       <BubbleLink href="#link2" $delay="0.3s" visible={visible}>
@@ -116,7 +117,7 @@ const BubbleContainer = styled.div`
   width: 100%; /* Ensure bubbles are centered horizontally */
 `;
 
-const BubbleLink = styled.a`
+const BubbleLink = styled(Link)`
   width: 240px; /* 3 times larger than the original size */
   height: 240px;
   background-color: #F2C758; /* Yellow color from your toolkit */
