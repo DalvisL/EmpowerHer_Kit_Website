@@ -6,35 +6,37 @@ import styled from "styled-components";
 
 function NavBar() {
   return (
-    <Nav>
-      <NavList>
-        <NavItem>Home</NavItem>
-        <NavItem>Toolkit</NavItem>
-        <NavItem>About Us</NavItem>
-      </NavList>
-    </Nav>
+    <NavWrapper>
+      <NavMenu>
+        <NavLink>Home</NavLink>
+        <NavLink>Toolkit</NavLink>
+        <NavLink>About Us</NavLink>
+      </NavMenu>
+    </NavWrapper>
   );
 }
 
-const Nav = styled.nav`
+const NavWrapper = styled.nav`
   border-radius: 20px;
   background-color: #92dfbe;
   align-self: center;
   display: flex;
-  width: 1826px;
-  max-width: 100%;
+  width: 90%;
+  max-width: 1600px;
   height: 20px;
+  margin-bottom: 30px;
 `;
 
-const NavList = styled.ul`
+const NavMenu = styled.ul`
+  align-self: end;
   display: flex;
-  width: 301px;
+  width: 250px;
   max-width: 100%;
   gap: 20px;
   color: #06423d;
   justify-content: space-between;
-  margin: 14px 81px 0 auto;
-  font: 400 20px Josefin Sans, sans-serif;
+  margin: 14px 60px 0 0;
+  font: 400 16px Josefin Sans, sans-serif;
   list-style-type: none;
   padding: 0;
   @media (max-width: 991px) {
@@ -42,8 +44,9 @@ const NavList = styled.ul`
   }
 `;
 
-const NavItem = styled.li`
+const NavLink = styled.li`
   white-space: nowrap;
+  cursor: pointer;
   @media (max-width: 991px) {
     white-space: initial;
   }

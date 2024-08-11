@@ -4,21 +4,21 @@
 import React from "react";
 import styled from "styled-components";
 import NavBar from "./NavBar";
-import ToolkitSection from "./ToolkitSection";
-import SalaryResources from "./SalaryResources";
+import ToolkitTabs from "./ToolkitTabs";
+import ContentSection from "./ContentSection";
 
 function EmpowerHerKit() {
   return (
-    <MainContainer>
+    <StyledMain>
       <Header>EmpowerHer Kit</Header>
       <NavBar />
-      <ToolkitSection />
-      <SalaryResources />
-    </MainContainer>
+      <ToolkitTabs />
+      <ContentSection />
+    </StyledMain>
   );
 }
 
-const MainContainer = styled.main`
+const StyledMain = styled.main`
   background-color: #dcd4c7;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,8 @@ const MainContainer = styled.main`
 const Header = styled.h1`
   color: #06423d;
   align-self: center;
-  font: 400 80px Josefin Sans, sans-serif;
+  font: 400 60px Josefin Sans, sans-serif;
+  margin-bottom: 30px;
   @media (max-width: 991px) {
     max-width: 100%;
     font-size: 40px;
