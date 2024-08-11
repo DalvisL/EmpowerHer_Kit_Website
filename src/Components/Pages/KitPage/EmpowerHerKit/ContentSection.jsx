@@ -138,12 +138,12 @@ const ScrollableContent = styled.div`
   background-color: #ffffff;
   z-index: 10;
   display: flex;
-  min-height: 600px;
+  min-height: 100px;
   flex-direction: column;
-  overflow: hidden;
+  overflow-y: auto;
   align-items: center;
   justify-content: start;
-  padding: 35px 40px 250px;
+  padding: 35px 40px 100px;
   @media (max-width: 991px) {
     max-width: 100%;
     padding: 0 20px 80px;

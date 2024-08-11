@@ -64,6 +64,7 @@ const NavItem = styled.li`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 `;
 
 export default Navigation;

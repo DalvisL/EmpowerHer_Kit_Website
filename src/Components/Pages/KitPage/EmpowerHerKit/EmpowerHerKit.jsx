@@ -6,12 +6,15 @@ import styled from "styled-components";
 import NavBar from "./NavBar";
 import ToolkitTabs from "./ToolkitTabs";
 import ContentSection from "./ContentSection";
+import Header from "../../../EmpowerHerKit/Header";
+import Navigation from "../../../EmpowerHerKit/Navigation";
+
 
 function EmpowerHerKit() {
   return (
     <StyledMain>
-      <Header>EmpowerHer Kit</Header>
-      <NavBar />
+      <Header />
+      <Navigation />
       <ToolkitTabs />
       <ContentSection />
     </StyledMain>
@@ -24,17 +27,6 @@ const StyledMain = styled.main`
   flex-direction: column;
   overflow: hidden;
   padding: 55px 0;
-`;
-
-const Header = styled.h1`
-  color: #06423d;
-  align-self: center;
-  font: 400 60px Josefin Sans, sans-serif;
-  margin-bottom: 30px;
-  @media (max-width: 991px) {
-    max-width: 100%;
-    font-size: 40px;
-  }
 `;
 
 export default EmpowerHerKit;
