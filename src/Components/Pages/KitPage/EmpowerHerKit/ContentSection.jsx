@@ -69,7 +69,7 @@ const ContentWrapper = styled.section`
 `;
 
 const ContentColumns = styled.div`
-  gap: 100px;
+  gap: 150px;
   display: flex;
   @media (max-width: 991px) {
     flex-direction: column;
@@ -143,7 +143,7 @@ const ScrollableContent = styled.div`
   overflow-y: auto;
   align-items: center;
   justify-content: start;
-  padding: 35px 40px 100px;
+  padding: 35px 40px 90px;
   @media (max-width: 991px) {
     max-width: 100%;
     padding: 0 20px 80px;
