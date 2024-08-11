@@ -10,8 +10,7 @@ function App() {
     <Router>
       <Routes>
         {/* Define your routes here */}
-        <Route path="/Home" element={<EmpowerHerKit/>}/>
-        <Route exact path="/" element={<BuilderPage/>}/>
+        <Route exact path="/" element={<EmpowerHerKit/>}/>
         <Route path='/Toolkit' element={<ToolKitPage/>}/>
         <Route path='/KitPage' element={<KitPage/>}/>
       </Routes>

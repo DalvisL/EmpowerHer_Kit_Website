@@ -14,7 +14,7 @@ function Navigation() {
       <NavList>
         {navItems.map((item, index) => (
           <NavItem key={index}>
-            <StyledLink to={`/${item.toLowerCase().replace(" ", "-")}`}>
+            <StyledLink to={item === 'Home'? '/' :`/${item.toLowerCase().replace(" ", "-")}`}>
               {item}
             </StyledLink>
           </NavItem>
