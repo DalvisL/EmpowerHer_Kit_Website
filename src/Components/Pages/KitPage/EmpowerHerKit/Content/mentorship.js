@@ -7,7 +7,7 @@ const mentorship = {
             {type: 'text', content: "Are you new in leadership or just trying to improve your skills? Finding the right mentor can make all the difference! Check out this TedTalk to learn more on finding the right mentor for you."},
             {type: 'video', content: 'How to Get a Mentor', videoId: "87qjIZRkkio?si=8sssc_Om44g6Hkjy" },
             {type: 'text', content: "Feel like you are stalling at work? Not moving up? The right mentor and professional support system can help you get ahead. This TedTalk is the perfect tool to get you ahead." },
-            {type: 'video', content: "How to find the person who can help you get ahead at work", videoID: "gpE_W50OTUc?si=xgfF1DG4aDjjjJlG" }
+            {type: 'video', content: "How to find the person who can help you get ahead at work", videoId: "gpE_W50OTUc?si=hNbT15UOX8biS3zK" }
         ]
     }, {
         title: 'Online Groups & Forums',
