@@ -64,13 +64,13 @@ const Bubbles = (props) => {
   const { visible, chooseContent } = props;
   return (
     <BubbleContainer>
-      <BubbleLink to={'/kitpage'} $delay="0s" visible={visible} onClick={() => chooseContent('equalPay')}>
+      <BubbleLink data-label="Equal Pay" to={'/kitpage'} $delay="0s" visible={visible} onClick={() => chooseContent('equalPay')}>
         <StyledImage src={EqualPayIcon} alt="Equal Pay" />
       </BubbleLink>
-      <BubbleLink to={'/kitpage'} $delay="0.3s" visible={visible} onClick={() => chooseContent('mentorship')}>
+      <BubbleLink data-label="Mentorship" to={'/kitpage'} $delay="0.3s" visible={visible} onClick={() => chooseContent('mentorship')}>
         <StyledImage src={MentorshipIcon} alt="Mentorship" />
       </BubbleLink>
-      <BubbleLink to={'/kitpage'} $delay="0.6s" visible={visible} onClick={() => chooseContent('family')}>
+      <BubbleLink data-label="Family & Life Planning" to={'/kitpage'} $delay="0.6s" visible={visible} onClick={() => chooseContent('family')}>
         <StyledImage src={FamilyIcon} alt="Family" />
       </BubbleLink>
     </BubbleContainer>
@@ -120,6 +120,7 @@ const BubbleContainer = styled.div`
   gap: 175px; /* Increased gap to spread the bubbles out more */
   z-index: 3; /* Ensure bubbles are above other elements */
   width: 100%; /* Ensure bubbles are centered horizontally */
+  
 `;
 
 const BubbleLink = styled(Link)`
@@ -133,12 +134,47 @@ const BubbleLink = styled(Link)`
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  &::after {
+    content: attr(data-label);
+    visibility: hidden;
+    opacity: 0;
+    width: 120px;
+    background-color: #06423d;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%; /* Position below the bubble */
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity 0.3s, visibility 0.3s;
+
+    /* Arrow adjustments */
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 100%; /* Arrow at the bottom of the tooltip */
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent black transparent;
+    }
+  }
+
+  &:hover::after, &:hover::before {
+    visibility: visible;
+    opacity: 1;
+  }
 `;
 
 const StyledImage = styled.img`
   width: 120px; /* Adjust the SVG size to fit the bubble */
   height: 120px;
   object-fit: contain;
+  
 `;
 
 export default EmpowerHerKit;
