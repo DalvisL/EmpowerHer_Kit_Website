@@ -172,6 +172,7 @@ const ScrollableContent = styled.div`
   display: flex;
   min-height: 100px;
   flex-direction: column;
+  height: 350px;
   overflow-y: auto;
   align-items: center;
   justify-content: start;
