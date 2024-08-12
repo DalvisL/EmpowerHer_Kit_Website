@@ -3,7 +3,7 @@ const equal_pay = {
     ['tabContent']: [
     {
             title: 'Introduction to Equal Pay',
-            description: "Equal pay is a fundamental right for all. It is important to know how to navigate and find valuable information on expected pay for the position you are interested in.",
+            description: "SheeKeela Edwards introduces the Fair and Equal Pay section of the EmpowerHer kit and explains the importance of this subject.",
             contents: [
                 {type: 'video', content: "Intro to Equal Pay Video", videoId: "mfUrGC3loWI?si=ReJE6PUo-07bNRVU"},
                 {type: 'link', content: "Also, check out our Kahoot quiz for this module!", href: "https://create.kahoot.it/share/equal-fair-pay-knowledge-check/a0db4155-ae3b-4486-b1ee-222ba5eb1fd0"}
