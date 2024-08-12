@@ -40,7 +40,7 @@ const equal_pay = {
         Here you will find information on normalizing discussions on pay. The organization should encourage open conversations on pay for transparency.`,
         contents: [
             {type:'text', content: "Child Social Experiment Looks At Gender Equality"},
-            {type: 'text', content: "The (embedded) video here shows us how simple Gender Equality is to understand! After watching this clip, try to explain this to someone who is not well versed in Gender Equality. If you’re able to explain it, then you’re one step closer to becoming an expert!"},
+            {type: 'text', content: "The video below shows us how simple Gender Equality is to understand! After watching this clip, try to explain this to someone who is not well versed in Gender Equality. If you’re able to explain it, then you’re one step closer to becoming an expert!"},
             {type: 'video', content: "Child Social Experiment", videoId: "QKgKaQzil1A?si=nZawXrvKzr7zM2y8" },
             {type: 'link', content: "What it Takes to Be a Fair-Pay Workplace"}
         ]
