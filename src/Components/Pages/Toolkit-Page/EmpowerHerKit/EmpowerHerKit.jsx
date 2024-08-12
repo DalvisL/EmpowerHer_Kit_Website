@@ -5,6 +5,9 @@ import ToolboxIcon from "./ToolboxIcon";
 import Header from "../../../EmpowerHerKit/Header";
 import Navigation from "../../../EmpowerHerKit/Navigation";
 import { Link } from "react-router-dom";
+import MentorshipIcon from '../../../../assets/591891_coach_coaching_management_mentor_mentoring_icon.svg';
+import FamilyIcon from '../../../../assets/5149858_couple_family_health_kids_icon.svg';
+import EqualPayIcon from '../../../../assets/11443667_equality_money_relatively_financial_equal_icon.svg';
 
 function EmpowerHerKit(props) {
   const { chooseContent } = props;
@@ -39,7 +42,7 @@ function EmpowerHerKit(props) {
         <ToolboxIconWrapper onClick={handleClick}>
           <ToolboxIcon active={active} />
         </ToolboxIconWrapper>
-        {showBubbles && <Bubbles visible={bubblesVisible} chooseContent={chooseContent}/>}
+        {showBubbles && <Bubbles visible={bubblesVisible} chooseContent={chooseContent} />}
       </MainContent>
     </ToolkitFrame>
   );
@@ -56,19 +59,19 @@ const bubbleAnimationOut = keyframes`
   100% { opacity: 0; transform: scale(0); }
 `;
 
-// Bubble component with inline SVG and links
+// Bubble component with styled images and links
 const Bubbles = (props) => {
   const { visible, chooseContent } = props;
   return (
     <BubbleContainer>
       <BubbleLink to={'/kitpage'} $delay="0s" visible={visible} onClick={() => chooseContent('equalPay')}>
-        <PlaceholderSVG />
+        <StyledImage src={EqualPayIcon} alt="Equal Pay" />
       </BubbleLink>
       <BubbleLink to={'/kitpage'} $delay="0.3s" visible={visible} onClick={() => chooseContent('mentorship')}>
-        <PlaceholderSVG />
+        <StyledImage src={MentorshipIcon} alt="Mentorship" />
       </BubbleLink>
       <BubbleLink to={'/kitpage'} $delay="0.6s" visible={visible} onClick={() => chooseContent('family')}>
-        <PlaceholderSVG />
+        <StyledImage src={FamilyIcon} alt="Family" />
       </BubbleLink>
     </BubbleContainer>
   );
@@ -111,7 +114,7 @@ const ToolboxIconWrapper = styled.div`
 
 const BubbleContainer = styled.div`
   position: absolute;
-  bottom: 400px; /* Adjust this value to position the bubbles above the ToolboxIcon */
+  bottom: 350px; /* Adjust this value to position the bubbles above the ToolboxIcon */
   display: flex;
   justify-content: center;
   gap: 175px; /* Increased gap to spread the bubbles out more */
@@ -132,27 +135,10 @@ const BubbleLink = styled(Link)`
   text-decoration: none;
 `;
 
-const PlaceholderSVG = styled.svg.attrs({
-  xmlns: "http://www.w3.org/2000/svg",
-  viewBox: "0 0 24 24",
-  fill: "none",
-  stroke: "currentColor",
-  strokeWidth: "2",
-  strokeLinecap: "round",
-  strokeLinejoin: "round",
-})`
-  width: 120px; /* Adjust the SVG size to fit the smaller bubble */
+const StyledImage = styled.img`
+  width: 120px; /* Adjust the SVG size to fit the bubble */
   height: 120px;
-  color: #fff; /* Set SVG color to white */
+  object-fit: contain;
 `;
 
-const PlaceholderSVGContent = () => (
-  <PlaceholderSVG>
-    <circle cx="12" cy="12" r="10"></circle>
-    <line x1="12" y1="8" x2="12" y2="12"></line>
-    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-  </PlaceholderSVG>
-);
-
 export default EmpowerHerKit;
- 
