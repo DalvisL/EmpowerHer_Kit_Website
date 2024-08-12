@@ -1,7 +1,15 @@
 
 const family = {
     tabs: ['Mental Health', 'Family/Career', 'New Family', 'Retirement'],
-    ['tabContent']: [{
+    ['tabContent']: [
+    {
+        title: 'Introduction to Family & Life Planning',
+        description: "Sheila Crocker introduces leaders to the Family and Life Planning section of the EmpowerHer kit and explains the importance of this for new and senior leaders.",
+        contents: [
+            {type: 'video', content: "Intro to Family & Life Planning video", videoId: "ndBKxob7VkI?si=9u1Bz65VTAXvv8eV"},
+            {type: 'link', content: "Also, check out our Kahoot quiz for this module!", href: "https://create.kahoot.it/share/family-life-planning-knowledge-check/8db89718-366f-4a9d-b728-5e9c52b7fa77"}
+        ]
+    },  {
         title: 'Mental Health and Burnout Reduction',
         description: "When reducing burnout and maintaining good mental health, individuals can recognize and respond to signs of stress, set boundaries, develop a work-life balance, prioritize self-care, exercise the body and mind and regularly take breaks, and maintain a support network",
         contents: [
@@ -13,7 +21,7 @@ const family = {
             {type: 'text', content: "When you think about planning, what comes to mind? This video will help you to organize your tasks, so that you are able to plan your week more effectively. After watching this video, think of one thing that you found useful that you plan to incorporate in your daily life." },
 
         ]
-    }, {
+    },  {
         title: 'Family-Career Balance',
         description:'Balancing family and career individuals can pause and de-normalize, pay attention to your emotions, re-prioritize, consider your alternatives, and implement changes.',
         contents: [
@@ -24,8 +32,7 @@ const family = {
             {type:'text', content: "Is your work-life balanced? If so, how did you achieve that and if not, is there something that plays a role in the lack of balance? Read the article, and consider one take away that you will use or will share with others."},
             {type:'link', content: "Balacing Family and Career", href: "https://www.familylife.com/articles/topics/marriage/marriage-challenges/busyness-and-stress-challenges/balancing-family-and-career-for-the-young-professional-pursuing-both/"}
         ]
-    }, 
-    {
+    },  {
         title: 'Returing to Work After Having a Baby',
         description: "When returning to work with a new family individuals can involve the entire family in the process, ease back into a work routine, communicate effectively, don't sweat the small stuff, and have patience with themselves.",
         contents: [

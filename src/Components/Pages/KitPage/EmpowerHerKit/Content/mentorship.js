@@ -1,6 +1,13 @@
 const mentorship = {
-    tabs: ['Right Mentor', 'Online Groups', 'Mentor 101', 'Networking'],
-    ['tabContent']: [{
+    tabs: ['Introduction','Right Mentor', 'Online Groups', 'Mentor 101', 'Networking'],
+        ['tabContent']: [{
+        title: 'Introduction to Mentorship',
+        description: "Jessica Moise introduces leaders to the Mentorship section of the EmpowerHer kit and gives an overview of the tools leaders will find.",
+        contents: [
+            {type: 'video', content: "Intro to Mentorship video", videoId: "nS6vZ9cfIkU?si=TNone7LCa8OtZP3t"},
+            {type: 'link', content: "Also, check out our Kahoot quiz for this module!", href: "https://create.kahoot.it/share/mentorship-knowledge-check/f1c35794-3399-4516-b014-2ad5ae6b5c09"}
+        ]
+    }, {
         title: 'How to Find the Right Mentor for You!',
         description: "As new leaders, it is important that you know how to find a mentor and what mentor is right for you.",
         contents: [

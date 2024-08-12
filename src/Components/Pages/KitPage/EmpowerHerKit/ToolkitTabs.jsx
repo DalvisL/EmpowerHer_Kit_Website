@@ -7,8 +7,6 @@ import styled from "styled-components";
 function ToolkitTabs(props) {
   const { tabs, setActiveTab, activeTab } = props;
 
-  console.log(activeTab)
-
   return (
     <TabsWrapper>
       <TabList>
@@ -36,6 +34,12 @@ function ToolkitTabs(props) {
             onClick={() => setActiveTab({tabName: tabs[3], index: 3})}
           >
             {tabs[3]}
+          </SubTab>
+          <SubTab
+            active={activeTab.tabName === tabs[4]}
+            onClick={() => setActiveTab({tabName: tabs[4], index: 4})}
+          >
+            {tabs[4]}
           </SubTab>
         </SubTabList>
       </TabList>
