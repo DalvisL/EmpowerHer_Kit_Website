@@ -14,7 +14,8 @@ const equal_pay = {
         contents: [{type: 'text', content: "It's difficult to know whether you’re being compensated fairly or not, using the resources below allows you to put more energy to other needs in your life." },
         {type: 'link', content: 'Bureau of Labor Statistics', href: 'https://www.bls.gov/'},
         {type: 'text', content: "Glassdoor is a great resource to search salaries in different industries. Search for your current or prospective roles to see if you're getting the average salary according to Glassdoor."},
-        {type: 'image', content: "Screenshot of Glassdoor Salary Search", src: "https://i.ibb.co/PWvYn6p/Screenshot-2024-07-31-at-6-46-53-PM.jpg"}
+        {type: 'image', content: "Screenshot of Glassdoor Salary Search", src: "https://i.ibb.co/PWvYn6p/Screenshot-2024-07-31-at-6-46-53-PM.jpg"},
+        {type: 'link', content: "Glassdoor - Salaries", href: "https://www.glassdoor.com/Salaries/index.htm"}
         ]
     },  {
         title: 'Negotiation 101',
