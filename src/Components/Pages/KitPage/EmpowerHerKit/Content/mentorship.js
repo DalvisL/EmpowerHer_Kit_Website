@@ -23,7 +23,7 @@ const mentorship = {
         {type: 'link', content: 'www.facebook.com/groups/carminemedia', href: 'https://www.facebook.com/groups/carminemedia'},
         {type: 'link', content: 'www.facebook.com/groups/528550327981184', href: 'https://www.facebook.com/groups/528550327981184'},
         {type: 'link', content: 'www.facebook.com/groups/womeninsalescommunity', href: 'https://www.facebook.com/groups/womeninsalescommunity'},
-        {type: 'image', content: 'screenshot of a facebook group', src: ''}
+        {type: 'image', content: 'screenshot of a facebook group', src: 'https://i.ibb.co/0c3L3nT/Screenshot-2024-07-31-at-8-41-07-PM.jpg'}
         ]
     }, 
     {
@@ -36,6 +36,7 @@ const mentorship = {
             {type: 'video', content: "3 Key Elements to Thriving Mentorship TED Talk by Janet Phan", videoId: "rY7r6A_J_jQ?si=8XynIYnV--1kkFge"},
             {type: 'text', content: "Have a new mentee but still becoming the mentor you want to be? Ryan Carruthers breaks down 15 expert tips for first-time mentors to help you and your mentee succeed! "},
             {type: 'link', content: "15 expert tips for first-time mentors by Ryan Carruthers", href: "https://www.togetherplatform.com/blog/how-to-mentor-someone"},
+            {type: 'image', content: "Screenshot of the Above Link", src: "https://i.ibb.co/g7Q35gy/Screenshot-2024-07-31-at-8-50-29-PM.jpg"}
         ]
     }, {
         title: 'Networking Groups',

@@ -41,7 +41,7 @@ const family = {
             {type: "link", content: "3 Things New Parents Should Consider", href: "https://www.ted.com/talks/emily_oster_3_things_new_parents_should_consider_before_going_back_to_work?subtitle=en"},
             {type: "text", content: "This article below offers ideas of ways to prepare for your return to work. After reading, selecting one tip that you will share with others as they are preparing to return to work:"},
             {type: "link", content: "How to prepare to return to work", href: "https://pathforward.org/how-to-prepare-your-family-and-yourself-for-your-return-to-work/"},
-            {type: "image", content: "Paragraph about involving the entire family", href: ""}
+            {type: "image", content: "Paragraph about involving the entire family", src: "https://i.ibb.co/PGHVpcx/IMG-6737.jpg"}
         ]
     }, {
         title: 'Retirement Planning',
