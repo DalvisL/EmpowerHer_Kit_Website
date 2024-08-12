@@ -18,11 +18,11 @@ const family = {
         description:'Balancing family and career individuals can pause and de-normalize, pay attention to your emotions, re-prioritize, consider your alternatives, and implement changes.',
         contents: [
             {type:'text', content: "After reading the article below, select one of the journal prompts and take 10 minutes to answer the prompt when life feels out your hands. For example: 'What is something that is causing stress in your life at this moment?'"},
-            {type:'link', content: "Journal Prompts", src: "https://lifebydeanna.com/journal-prompts-for-when-you-feel-totally-out-of-control/"},
+            {type:'link', content: "Journal Prompts", href: "https://lifebydeanna.com/journal-prompts-for-when-you-feel-totally-out-of-control/"},
             {type:'text', content: "After reading, consider a reason for why you should pay attention to your emotions. Consider taking one minute a day to discovery your emotions and how they impact your day."},
-            {type:'link', content: "", src: "https://hbr.org/2021/01/work-life-balance-is-a-cycle-not-an-achievement"},
+            {type:'link', content: "Tips on family/career balance", href: "https://hbr.org/2021/01/work-life-balance-is-a-cycle-not-an-achievement"},
             {type:'text', content: "Is your work-life balanced? If so, how did you achieve that and if not, is there something that plays a role in the lack of balance? Read the article, and consider one take away that you will use or will share with others."},
-            {type:'link', content: "Balacing Family and Career", src: "https://www.familylife.com/articles/topics/marriage/marriage-challenges/busyness-and-stress-challenges/balancing-family-and-career-for-the-young-professional-pursuing-both/"}
+            {type:'link', content: "Balacing Family and Career", href: "https://www.familylife.com/articles/topics/marriage/marriage-challenges/busyness-and-stress-challenges/balancing-family-and-career-for-the-young-professional-pursuing-both/"}
         ]
     }, 
     {
@@ -31,10 +31,10 @@ const family = {
         contents: [
             {type: "text", content: "No one wants to leave their loved ones after speaking a period of time with them (weekends included)!"},
             {type: "text", content: "This video below will help you think more about decisions when considering returning to work. After watching this video, consider one thing you feel is important when deciding to return to work."},
-            {type: "link", content: "3 Things New Parents Should Consider", src: "https://www.ted.com/talks/emily_oster_3_things_new_parents_should_consider_before_going_back_to_work?subtitle=en"},
+            {type: "link", content: "3 Things New Parents Should Consider", href: "https://www.ted.com/talks/emily_oster_3_things_new_parents_should_consider_before_going_back_to_work?subtitle=en"},
             {type: "text", content: "This article below offers ideas of ways to prepare for your return to work. After reading, selecting one tip that you will share with others as they are preparing to return to work:"},
-            {type: "link", content: "How to prepare to return to work", src: "https://pathforward.org/how-to-prepare-your-family-and-yourself-for-your-return-to-work/"},
-            {type: "image", content: "Paragraph about involving the entire family", src: ""}
+            {type: "link", content: "How to prepare to return to work", href: "https://pathforward.org/how-to-prepare-your-family-and-yourself-for-your-return-to-work/"},
+            {type: "image", content: "Paragraph about involving the entire family", href: ""}
         ]
     }, {
         title: 'Retirement Planning',
