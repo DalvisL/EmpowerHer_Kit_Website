@@ -69,7 +69,7 @@ const ContentWrapper = styled.section`
 `;
 
 const ContentColumns = styled.div`
-  gap: 150px;
+  gap: 10%;
   display: flex;
   @media (max-width: 991px) {
     flex-direction: column;
@@ -94,9 +94,9 @@ const Description = styled.p`
   align-self: stretch;
   color: #000000;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
   margin: auto 0;
-  padding: 40px 30px 120px;
+  padding: 40px 30px 90px;
   font: 400 24px Josefin Sans, sans-serif;
   @media (max-width: 991px) {
     max-width: 100%;
