@@ -7,8 +7,8 @@ import { useState } from 'react';
 
 // content
 import equalPay from './Components/Pages/KitPage/EmpowerHerKit/Content/equalPay';
-import family from './Components/Pages/KitPage/EmpowerHerKit/Content/Family';
-import mentorship from './Components/Pages/KitPage/EmpowerHerKit/Content/Mentorship';
+import family from './Components/Pages/KitPage/EmpowerHerKit/Content/family';
+import mentorship from './Components/Pages/KitPage/EmpowerHerKit/Content/mentorship';
 
 
 function App() {
