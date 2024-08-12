@@ -35,7 +35,7 @@ function ContentSection(props) {
                     );
                   } else if (resource.type === 'link') {
                     return (
-                      <ResourceLink key={index} href={resource.href}>{resource.content}</ResourceLink>
+                      <ResourceLink key={index} href={resource.href} target="_blank" rel="noopener noreferrer">{resource.content}</ResourceLink>
                     );
                   } else if (resource.type === 'text') {
                     return (
