@@ -19,7 +19,7 @@ const equal_pay = {
         ]
     },  {
         title: 'Negotiation 101',
-        description:'This resource will demonstrate strategies to effectively negotiate an initial salary or raise conducted through research an industry standards and salary benchmarks. Its very crucial to articulate your contributions to the organization.',
+        description: "This resource will demonstrate strategies to effectively negotiate an initial salary or raise increase, conducted through research of industry standards and salary benchmarks. It's crucial to articulate your contributions to the organization.",
         contents: [{type: 'text', content: 'Knowing how to negotiate can help you get the pay you feel you deserve. Click the links below for tips on how to negotiate.'},
         {type: 'link', content: '3 Salary Negotiation Tips', href: 'https://www.pon.harvard.edu/daily/salary-negotiations/negotiate-salary-3-winning-strategies/'},
         {type: 'link', content: 'Teaching Negotiation', href: 'https://www.pon.harvard.edu/freemium/teaching-negotiation-understanding-the-impact-of-role-play-simulations/'},
