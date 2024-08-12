@@ -4,6 +4,7 @@ import EmpowerHerKit from './Components/EmpowerHerKit/EmpowerHerKit';
 import ToolKitPage from './Components/Pages/Toolkit-Page/EmpowerHerKit/EmpowerHerKit';
 import KitPage from './Components/Pages/KitPage/EmpowerHerKit/EmpowerHerKit';
 import { useState } from 'react';
+import AboutUs from './Components/Pages/AboutUs';
 
 // content
 import equalPay from './Components/Pages/KitPage/EmpowerHerKit/Content/equalPay';
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/" element={<EmpowerHerKit />}/>
         <Route path='/Toolkit' element={<ToolKitPage chooseContent={chooseContent}/>}/>
         <Route path='/KitPage' element={<KitPage activeBucket={activeBucket} />}/>
+        <Route path='/about-us' element={<AboutUs />}/>
       </Routes>
     </Router>
   );
