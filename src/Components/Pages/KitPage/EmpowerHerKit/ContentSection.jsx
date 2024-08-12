@@ -7,7 +7,12 @@ import styled from "styled-components";
 function ContentSection(props) {
   const { tabContent, index } = props;
 
-  console.log('tab content' + tabContent)
+  // Check if tabContent is defined and has an item at the given index
+  if (!tabContent || !tabContent[index]) {
+    return <p>Loading content...</p>; // Or handle this case as needed
+  }
+
+  const contents = tabContent[index].contents;
 
   return (
     <ContentWrapper>
@@ -22,35 +27,27 @@ function ContentSection(props) {
             <ScrollableContent>
               <ResourceTitle>{tabContent[index].title}</ResourceTitle>
               <ResourceText>
-                Knowing how to negotiate can help you get the pay you feel you
-                deserve click the links below for tips on how to negotiate.
-                <ResourceLink
-                  href="https://www.pon.harvard.edu/daily/salary-negotiations/negotiate-salary-3-winning-strategies/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  3 Salary Negotiation Tips
-                </ResourceLink>
-                <ResourceLink
-                  href="https://www.pon.harvard.edu/freemium/teaching-negotiation-understanding-the-impact-of-role-play-simulations/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Teaching Negotiation
-                </ResourceLink>
-                Preparation, Investigation, and Roleplaying are three tips women
-                should grasp to help level the playing field in the negotiation
-                world. This article provides an brief dive of six tips that can
-                place women in different tax brackets (Harvard, 2024). Using the
-                article below, pick a tip that you may not have been aware of
-                and think about how it would benefit you.
-                <ResourceLink
-                  href="https://www.pon.harvard.edu/daily/salary-negotiations/salary-negotiation-skills-different-for-men-and-women/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Are Salary Negotiation Skills Different for Men and Women?
-                </ResourceLink>
+                {contents && contents.map((resource, index) => {
+                  if (resource.type === 'video') {
+                    return (
+                      <VideoEmbed key={index} videoId={resource.videoId} />
+                    );
+                  } else if (resource.type === 'link') {
+                    return (
+                      <ResourceLink key={index} href={resource.href}>{resource.content}</ResourceLink>
+                    );
+                  } else if (resource.type === 'text') {
+                    return (
+                      <p key={index}>{resource.content}</p>
+                    );
+                  } else if (resource.type === 'image') {
+                    return (
+                      <img key={index} src={resource.src} alt={resource.content} />
+                    );
+                  } else {
+                    return null;
+                  }
+                })}
               </ResourceText>
             </ScrollableContent>
           </ResourcesBackground>
@@ -59,6 +56,40 @@ function ContentSection(props) {
     </ContentWrapper>
   );
 }
+
+// Styled component for the video container
+const VideoWrapper = styled.div`
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+`;
+
+const VideoEmbed = ({ videoId }) => {
+  return (
+    <VideoWrapper>
+      <iframe
+        src={`https://www.youtube.com/embed/${videoId}`}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        title="YouTube video"
+      />
+    </VideoWrapper>
+  );
+};
+
 
 const ContentWrapper = styled.section`
   background-color: #d9d9d9;

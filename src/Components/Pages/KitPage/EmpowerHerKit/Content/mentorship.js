@@ -5,9 +5,9 @@ const mentorship = {
         description: "As new leaders, it is important that you know how to find a mentor and what mentor is right for you.",
         content: [
             {type: 'text', content: "Are you new in leadership or just trying to improve your skills? Finding the right mentor can make all the difference! Check out this TedTalk to learn more on finding the right mentor for you."},
-            {type: 'video', content: 'How to Get a Mentor', src: "https://www.youtube.com/watch?v=87qjIZRkkio" },
+            {type: 'video', content: 'How to Get a Mentor', videoId: "87qjIZRkkio?si=8sssc_Om44g6Hkjy" },
             {type: 'text', content: "Feel like you are stalling at work? Not moving up? The right mentor and professional support system can help you get ahead. This TedTalk is the perfect tool to get you ahead." },
-            {type: 'video', content: "How to find the person who can help you get ahead at work", src: "https://www.youtube.com/watch?v=gpE_W50OTUc" }
+            {type: 'video', content: "How to find the person who can help you get ahead at work", videoID: "gpE_W50OTUc?si=xgfF1DG4aDjjjJlG" }
         ]
     }, {
         title: 'Online Groups & Forums',
@@ -24,9 +24,9 @@ const mentorship = {
         description: 'Serving as a mentor for the first time can be a tough task. Experienced mentors can provide great advice and direction.',
         contents: [
             {type: 'text', content: "Do you want to share your knowledge and success and invest in upcoming leaders? Serving as a mentor is a rewarding experience. This TedTalk by Lori Hunt shares with you the power of mentoring."},
-            {type: 'video', content: "The Power of Mentoring", src: "https://www.youtube.com/watch?v=Atme26C0l5E"},
+            {type: 'video', content: "The Power of Mentoring", videoId: "Atme26C0l5E?si=4hPRZZSuNpJk88qG"},
             {type: 'text', content: "Whether you are the mentor or the mentee, a thriving mentorship is crucial. This TedTalk will share three key elements that are sure to make your mentorship thrive!" },
-            {type: 'video', content: "3 Key Elements to Thriving Mentorship TED Talk by Janet Phan", href: "https://www.youtube.com/watch?v=rY7r6A_J_jQ"},
+            {type: 'video', content: "3 Key Elements to Thriving Mentorship TED Talk by Janet Phan", videoId: "rY7r6A_J_jQ?si=8XynIYnV--1kkFge"},
             {type: 'text', content: "Have a new mentee but still becoming the mentor you want to be? Ryan Carruthers breaks down 15 expert tips for first-time mentors to help you and your mentee succeed! "},
             {type: 'link', content: "15 expert tips for first-time mentors by Ryan Carruthers", href: "https://www.togetherplatform.com/blog/how-to-mentor-someone"},
         ]

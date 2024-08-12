@@ -9,7 +9,7 @@ const family = {
             {type: 'link', content: "How To Stop Burnout Before It Starts", href: "https://www.ted.com/talks/jacqueline_kerr_how_to_stop_burnout_before_it_starts?trigger=0s&subtitle=en"},
             {type: 'text', content: "After reading this article, you will be able to recognize ways that stress shows up. What are some ways that you would feel comfortable sharing ways to recognize and respond to signs of stress? What have you done in the past that you have found successful when dealing with your stress or helping others to manage their own stress?"},
             {type: 'link', content: "Tips to Reduce Burnout", href: "https://www.medicalnewstoday.com/articles/preventing-burnout"},
-            {type: 'video', content: "How to Plan Your Week Effectively", src: "https://www.youtube.com/watch?v=jozNEpY8iik"},
+            {type: 'video', content: "How to Plan Your Week Effectively", videoId: "jozNEpY8iik?si=XIJ6NTw3pl_J0ih-"},
             {type: 'text', content: "When you think about planning, what comes to mind? This video will help you to organize your tasks, so that you are able to plan your week more effectively. After watching this video, think of one thing that you found useful that you plan to incorporate in your daily life." },
 
         ]
