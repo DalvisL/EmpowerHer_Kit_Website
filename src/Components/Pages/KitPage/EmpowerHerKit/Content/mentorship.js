@@ -3,7 +3,7 @@ const mentorship = {
     ['tabContent']: [{
         title: 'How to Find the Right Mentor for You!',
         description: "As new leaders, it is important that you know how to find a mentor and what mentor is right for you.",
-        content: [
+        contents: [
             {type: 'text', content: "Are you new in leadership or just trying to improve your skills? Finding the right mentor can make all the difference! Check out this TedTalk to learn more on finding the right mentor for you."},
             {type: 'video', content: 'How to Get a Mentor', videoId: "87qjIZRkkio?si=8sssc_Om44g6Hkjy" },
             {type: 'text', content: "Feel like you are stalling at work? Not moving up? The right mentor and professional support system can help you get ahead. This TedTalk is the perfect tool to get you ahead." },
