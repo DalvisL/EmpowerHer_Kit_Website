@@ -35,8 +35,8 @@ const mentorship = {
         description: 'Local networking groups can be a great resource for for new and experienced leaders alike! Taking advantage of the other leaders around you can also be a great resource.',
         contents: [
             {type: 'text', content: "The Chamber of Commerce can be a great resource for networking groups! One initiative for example, Women Taking the Lead’s main initiative is to connect leaders within government and business together to development professionally."},
-            {type: 'link', content: 'Chamber of Commerce', href: 'https://www.uschamber.com/ '},
-            {type: 'link', content: 'https://www.centralctchambers.org/ ', href: 'https://www.centralctchambers.org/ '},
+            {type: 'link', content: 'Chamber of Commerce', href: 'https://www.uschamber.com/'},
+            {type: 'link', content: 'https://www.centralctchambers.org/', href: 'https://www.centralctchambers.org/ '},
             {type: 'link', content: 'Women Taking the Lead', href: 'https://www.uschamber.com/major-initiative/women-taking-the-lead'}
         ]
     }]
