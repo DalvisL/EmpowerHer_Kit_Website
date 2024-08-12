@@ -4,22 +4,23 @@
 import React from "react";
 import styled from "styled-components";
 
-function ContentSection() {
+function ContentSection(props) {
+  const { tabContent, index } = props;
+
+  console.log('tab content' + tabContent)
+
   return (
     <ContentWrapper>
       <ContentColumns>
         <DescriptionColumn>
           <Description>
-            This resource will demonstrate strategies to effectively negotiate
-            an initial salary or raise conducted through research an industry
-            standards and salary benchmarks. Its very crucial to articulate your
-            contributions to the organization.
+            {tabContent[index].description}
           </Description>
         </DescriptionColumn>
         <ResourcesColumn>
           <ResourcesBackground>
             <ScrollableContent>
-              <ResourceTitle>Negotiation 101</ResourceTitle>
+              <ResourceTitle>{tabContent[index].title}</ResourceTitle>
               <ResourceText>
                 Knowing how to negotiate can help you get the pay you feel you
                 deserve click the links below for tips on how to negotiate.

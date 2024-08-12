@@ -4,36 +4,38 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-function ToolkitTabs() {
-  const [activeTab, setActiveTab] = useState("Negotiation 101");
+function ToolkitTabs(props) {
+  const { tabs, setActiveTab, activeTab } = props;
+
+  console.log(activeTab)
 
   return (
     <TabsWrapper>
       <TabList>
         <SubTabList>
         <SubTab
-            active={activeTab === "Salary"}
-            onClick={() => setActiveTab("Salary")}
+            active={activeTab.tabName === tabs[0]}
+            onClick={() => setActiveTab({tabName: tabs[0], index: 0})}
           >
-            Salary
+            {tabs[0]}
           </SubTab>
           <SubTab
-            active={activeTab === "Negotiation 101"}
-            onClick={() => setActiveTab("Negotiation 101")}
+            active={activeTab.tabName === tabs[1]}
+            onClick={() => setActiveTab({tabName: tabs[1], index: 1})}
           >
-            Negotiation 101
+            {tabs[1]}
           </SubTab>
           <SubTab
-            active={activeTab === "Market Yourself"}
-            onClick={() => setActiveTab("Market Yourself")}
+            active={activeTab.tabName === tabs[2]}
+            onClick={() => setActiveTab({tabName: tabs[2], index: 2})}
           >
-            Market Yourself
+            {tabs[2]}
           </SubTab>
           <SubTab
-            active={activeTab === "Pay Discussion"}
-            onClick={() => setActiveTab("Pay Discussion")}
+            active={activeTab.tabName === tabs[3]}
+            onClick={() => setActiveTab({tabName: tabs[3], index: 3})}
           >
-            Pay Discussion
+            {tabs[3]}
           </SubTab>
         </SubTabList>
       </TabList>

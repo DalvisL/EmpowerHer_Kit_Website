@@ -6,7 +6,8 @@ import Header from "../../../EmpowerHerKit/Header";
 import Navigation from "../../../EmpowerHerKit/Navigation";
 import { Link } from "react-router-dom";
 
-function EmpowerHerKit() {
+function EmpowerHerKit(props) {
+  const { chooseContent } = props;
   const [active, setActive] = useState(false);
   const [showBubbles, setShowBubbles] = useState(false);
   const [bubblesVisible, setBubblesVisible] = useState(false);
@@ -38,7 +39,7 @@ function EmpowerHerKit() {
         <ToolboxIconWrapper onClick={handleClick}>
           <ToolboxIcon active={active} />
         </ToolboxIconWrapper>
-        {showBubbles && <Bubbles visible={bubblesVisible} />}
+        {showBubbles && <Bubbles visible={bubblesVisible} chooseContent={chooseContent}/>}
       </MainContent>
     </ToolkitFrame>
   );
@@ -56,16 +57,17 @@ const bubbleAnimationOut = keyframes`
 `;
 
 // Bubble component with inline SVG and links
-const Bubbles = ({ visible }) => {
+const Bubbles = (props) => {
+  const { visible, chooseContent } = props;
   return (
     <BubbleContainer>
-      <BubbleLink to={'/kitpage'} $delay="0s" visible={visible}>
+      <BubbleLink to={'/kitpage'} $delay="0s" visible={visible} onClick={() => chooseContent('equalPay')}>
         <PlaceholderSVG />
       </BubbleLink>
-      <BubbleLink href="#link2" $delay="0.3s" visible={visible}>
+      <BubbleLink to={'/kitpage'} $delay="0.3s" visible={visible} onClick={() => chooseContent('mentorship')}>
         <PlaceholderSVG />
       </BubbleLink>
-      <BubbleLink href="#link3" $delay="0.6s" visible={visible}>
+      <BubbleLink to={'/kitpage'} $delay="0.6s" visible={visible} onClick={() => chooseContent('family')}>
         <PlaceholderSVG />
       </BubbleLink>
     </BubbleContainer>

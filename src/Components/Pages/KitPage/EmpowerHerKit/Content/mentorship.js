@@ -1,8 +1,8 @@
 const mentorship = {
     tabs: ['Right Mentor', 'Online Groups', 'Mentor 101', 'Networking'],
-    tabContent: [{
+    ['tabContent']: [{
         title: 'How to Find the Right Mentor for You!',
-        description: "It is very crucial in today's world that you know how to navigate and find valuable information on expected pay for the position you are interested in. Glassdoor is a great resource to search salaries in different industries",
+        description: "As new leaders, it is important that you know how to find a mentor and what mentor is right for you.",
         content: [
             {type: 'text', content: "Are you new in leadership or just trying to improve your skills? Finding the right mentor can make all the difference! Check out this TedTalk to learn more on finding the right mentor for you."},
             {type: 'video', content: 'How to Get a Mentor', src: "https://www.youtube.com/watch?v=87qjIZRkkio" },
@@ -10,21 +10,35 @@ const mentorship = {
             {type: 'video', content: "How to find the person who can help you get ahead at work", src: "https://www.youtube.com/watch?v=gpE_W50OTUc" }
         ]
     }, {
-        title: 'Negotiation 101',
-        description:'This resource will demonstrate strategies to effectively negotiate an initial salary or raise conducted through research an industry standards and salary benchmarks. Its very crucial to articulate your contributions to the organization.',
-        contents: [{type: 'text', content: 'Knowing how to negotiate can help you get the pay you feel you deserve. Click the links below for tips on how to negotiate.'},
-        {type: 'link', content: '3 Salary Negotiation Tips', href: 'https://www.pon.harvard.edu/daily/salary-negotiations/negotiate-salary-3-winning-strategies/'},
-        {type: 'link', content: 'Teaching Negotiation', href: 'https://www.pon.harvard.edu/freemium/teaching-negotiation-understanding-the-impact-of-role-play-simulations/'},
-        {type: 'text', content: 'Preparation, Investigation, and Roleplaying are three tips women should grasp to help level the playing field in the negotiation world. This article provides an brief dive of six tips that can place women in different tax brackets (Harvard, 2024). Using the article below, pick a tip that you may not have been aware of and think about how it would benefit you.'},
-        {type: 'link', content: 'Are Salary Negotiation Skills Different for Men and Women?', href: 'https://www.pon.harvard.edu/daily/salary-negotiations/salary-negotiation-skills-different-for-men-and-women/'}
+        title: 'Online Groups & Forums',
+        description:'Online forums and Facebook groups can be a great resource for getting tips and advice for other leaders. ',
+        contents: [{type: 'text', content: 'Facebook groups for women in leadership can be beneficial to growing professionally, below you’ll find numerous online groups and forums that can provide connection and community to women all over! '},
+        {type: 'link', content: 'www.facebook.com/groups/carminemedia', href: 'www.facebook.com/groups/carminemedia'},
+        {type: 'link', content: 'www.facebook.com/groups/528550327981184', href: 'www.facebook.com/groups/528550327981184'},
+        {type: 'link', content: 'www.facebook.com/groups/womeninsalescommunity', href: 'www.facebook.com/groups/womeninsalescommunity'},
+        {type: 'image', content: 'screenshot of a facebook group', src: ''}
         ]
     }, 
     {
-        title: 'Market Yourself',
-        description: '',
+        title: 'Being a Mentor',
+        description: 'Serving as a mentor for the first time can be a tough task. Experienced mentors can provide great advice and direction.',
+        contents: [
+            {type: 'text', content: "Do you want to share your knowledge and success and invest in upcoming leaders? Serving as a mentor is a rewarding experience. This TedTalk by Lori Hunt shares with you the power of mentoring."},
+            {type: 'video', content: "The Power of Mentoring", src: "https://www.youtube.com/watch?v=Atme26C0l5E"},
+            {type: 'text', content: "Whether you are the mentor or the mentee, a thriving mentorship is crucial. This TedTalk will share three key elements that are sure to make your mentorship thrive!" },
+            {type: 'video', content: "3 Key Elements to Thriving Mentorship TED Talk by Janet Phan", href: "https://www.youtube.com/watch?v=rY7r6A_J_jQ"},
+            {type: 'text', content: "Have a new mentee but still becoming the mentor you want to be? Ryan Carruthers breaks down 15 expert tips for first-time mentors to help you and your mentee succeed! "},
+            {type: 'link', content: "15 expert tips for first-time mentors by Ryan Carruthers", href: "https://www.togetherplatform.com/blog/how-to-mentor-someone"},
+        ]
     }, {
-        title: 'Pay Discussion',
-        description: '',
+        title: 'Networking Groups',
+        description: 'Local networking groups can be a great resource for for new and experienced leaders alike! Taking advantage of the other leaders around you can also be a great resource.',
+        contents: [
+            {type: 'text', content: "The Chamber of Commerce can be a great resource for networking groups! One initiative for example, Women Taking the Lead’s main initiative is to connect leaders within government and business together to development professionally."},
+            {type: 'link', content: 'Chamber of Commerce', href: 'https://www.uschamber.com/ '},
+            {type: 'link', content: 'https://www.centralctchambers.org/ ', href: 'https://www.centralctchambers.org/ '},
+            {type: 'link', content: 'Women Taking the Lead', href: 'https://www.uschamber.com/major-initiative/women-taking-the-lead'}
+        ]
     }]
 };
 export default mentorship;

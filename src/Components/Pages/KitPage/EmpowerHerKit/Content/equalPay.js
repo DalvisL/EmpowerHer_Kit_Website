@@ -1,6 +1,6 @@
 const equal_pay = {
     tabs: ['Salary', 'Negotiation 101', 'Market Yourself', 'Pay Discussion'],
-    tabContent: [{
+    ['tabContent']: [{
         title: 'Market Salary Resources',
         description: "It is very crucial in today's world that you know how to navigate and find valuable information on expected pay for the position you are interested in. Glassdoor is a great resource to search salaries in different industries",
         content: [{type: 'text', content: "It’s difficult to know whether you’re being compensated fairly or not, using the resources below allows you to put more energy to other needs in your life." },
