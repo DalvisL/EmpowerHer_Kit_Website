@@ -1,6 +1,6 @@
 
 const family = {
-    tabs: ['introduction','Mental Health', 'Family/Career', 'New Family', 'Retirement'],
+    tabs: ['Introduction','Mental Health', 'Family/Career', 'New Family', 'Retirement'],
     ['tabContent']: [
     {
         title: 'Introduction to Family & Life Planning',
