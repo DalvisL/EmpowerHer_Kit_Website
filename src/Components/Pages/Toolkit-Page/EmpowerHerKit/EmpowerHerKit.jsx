@@ -174,6 +174,7 @@ const StyledImage = styled.img`
   width: 120px; /* Adjust the SVG size to fit the bubble */
   height: 120px;
   object-fit: contain;
+  filter: invert(18%) sepia(6%) saturate(7484%) hue-rotate(130deg) brightness(101%) contrast(95%);
   
 `;
 

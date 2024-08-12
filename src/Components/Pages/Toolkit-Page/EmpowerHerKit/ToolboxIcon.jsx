@@ -9,7 +9,7 @@ function ToolboxIcon({ active }) {
   return (
     <IconWrapper $active={active}>
       <IconBackground />
-      <IconSVG src={ToolBoxIcon} alt="Toolbox Icon" />
+      <IconSVG $active={active} src={ToolBoxIcon} alt="Toolbox Icon" />
     </IconWrapper>
   );
 }
@@ -44,6 +44,7 @@ const IconSVG = styled.img`
   height: 200px;
   position: relative;
   z-index: 1; /* Ensure the SVG is above the background */
+  filter: ${props => props.$active ? "invert(93%) sepia(56%) saturate(3886%) hue-rotate(316deg) brightness(105%) contrast(90%);" : "none"};
 `;
 
 export default ToolboxIcon;
