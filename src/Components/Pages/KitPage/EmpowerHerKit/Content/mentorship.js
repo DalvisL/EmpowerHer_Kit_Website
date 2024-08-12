@@ -20,9 +20,9 @@ const mentorship = {
         title: 'Online Groups & Forums',
         description:'Online forums and Facebook groups can be a great resource for getting tips and advice for other leaders. ',
         contents: [{type: 'text', content: 'Facebook groups for women in leadership can be beneficial to growing professionally, below you’ll find numerous online groups and forums that can provide connection and community to women all over! '},
-        {type: 'link', content: 'www.facebook.com/groups/carminemedia', href: 'www.facebook.com/groups/carminemedia'},
-        {type: 'link', content: 'www.facebook.com/groups/528550327981184', href: 'www.facebook.com/groups/528550327981184'},
-        {type: 'link', content: 'www.facebook.com/groups/womeninsalescommunity', href: 'www.facebook.com/groups/womeninsalescommunity'},
+        {type: 'link', content: 'www.facebook.com/groups/carminemedia', href: 'https://www.facebook.com/groups/carminemedia'},
+        {type: 'link', content: 'www.facebook.com/groups/528550327981184', href: 'https://www.facebook.com/groups/528550327981184'},
+        {type: 'link', content: 'www.facebook.com/groups/womeninsalescommunity', href: 'https://www.facebook.com/groups/womeninsalescommunity'},
         {type: 'image', content: 'screenshot of a facebook group', src: ''}
         ]
     }, 
