@@ -3,6 +3,7 @@
  */
 import React from "react";
 import styled from "styled-components";
+import glassdoor from "../../../../assets/Screenshot 2024-07-31 at 6.46.53 PM.jpeg"
 
 function ContentSection(props) {
   const { tabContent, index } = props;
@@ -42,7 +43,7 @@ function ContentSection(props) {
                     );
                   } else if (resource.type === 'image') {
                     return (
-                      <img key={index} src={resource.src} alt={resource.content} />
+                      <StyledImage key={index} src={resource.src} alt={resource.content} />
                     );
                   } else {
                     return null;
@@ -204,6 +205,13 @@ const ResourceLink = styled.a`
   margin: 10px 0;
   color: #06423d;
   text-decoration: underline;
+`;
+
+const StyledImage = styled.img`
+  max-width: 100%; // Ensures image does not overflow its container
+  height: auto; // Maintains aspect ratio
+  display: block; // Prevents inline spacing issues
+  margin: 0 auto; // Centers image if it's not as wide as the container
 `;
 
 export default ContentSection;

@@ -3,14 +3,13 @@
  */
 import React from "react";
 import styled from "styled-components";
+import ToolBoxIcon from '../../../../assets/toolbox-svgrepo-com (1).svg';
 
 function ToolboxIcon({ active }) {
   return (
     <IconWrapper $active={active}>
       <IconBackground />
-      <IconSVG width="206" height="251" viewBox="0 0 206 251" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M205.5 62.75V250.5H0.5V62.75H51.375V0.5H154.625V62.75H205.5ZM144.35 62.75V10.775H61.65V62.75H144.35ZM195.225 240.225V73.025H10.775V240.225H195.225ZM61.65 114.213H144.35V124.488H61.65V114.213ZM61.65 145.038H144.35V155.313H61.65V145.038Z" fill="currentColor"/>
-      </IconSVG>
+      <IconSVG src={ToolBoxIcon} alt="Toolbox Icon" />
     </IconWrapper>
   );
 }
@@ -41,7 +40,8 @@ const IconBackground = styled.div`
   z-index: 0;
 `;
 
-const IconSVG = styled.svg`
+const IconSVG = styled.img`
+  height: 200px;
   position: relative;
   z-index: 1; /* Ensure the SVG is above the background */
 `;
