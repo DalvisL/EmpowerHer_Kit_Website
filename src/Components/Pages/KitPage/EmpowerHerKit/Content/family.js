@@ -38,7 +38,7 @@ const family = {
     },  
     {
         title: 'Returning to Work After Having a Baby',
-        additionalText: "Watch the video to the left to help you think through your return to work. Afterward, read the articles below and choose one tip to share with others who are preparing to return to work.",
+        additionalText: "Watch the video to the left to help you think through your return to work. Afterward, read the articles and choose one tip to share with others who are preparing to return to work.",
         description: "This article below suggests ways to prepare for your return to work. After reading, select one tip that you will share with others when they are preparing to return to work:",
         contents: [
             {type: "text", content: "No one wants to leave their loved ones after spending a period of time with them (weekends included)!"},
