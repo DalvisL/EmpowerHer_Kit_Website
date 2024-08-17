@@ -70,7 +70,7 @@ const Bubbles = (props) => {
       <BubbleLink data-label="Mentorship" to={'/kitpage'} $delay="0.3s" visible={visible} onClick={() => chooseContent('mentorship')}>
         <StyledImage src={MentorshipIcon} alt="Mentorship" />
       </BubbleLink>
-      <BubbleLink data-label="Family & Life Planning" to={'/kitpage'} $delay="0.6s" visible={visible} onClick={() => chooseContent('family')}>
+      <BubbleLink data-label="Life Planning" to={'/kitpage'} $delay="0.6s" visible={visible} onClick={() => chooseContent('family')}>
         <StyledImage src={FamilyIcon} alt="Family" />
       </BubbleLink>
     </BubbleContainer>
